@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Online Electronics Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🛒 TechShop</h1>
+        <p>Your favorite electronics store</p>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div id="products-container" class="products-grid">
+                <!-- Products will be loaded here by JavaScript -->
+                <p>Loading products...</p>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-container">
+                <p>Your cart is empty</p>
+            </div>
+            <button id="checkout-btn" class="btn btn-primary" style="display: none;">
+                Checkout - Total: $<span id="cart-total">0</span>
+            </button>
+        </section>
+
+        <section class="orders-section">
+            <h2>Recent Orders</h2>
+            <div id="orders-container">
+                <p>No orders yet</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechShop. Built with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
