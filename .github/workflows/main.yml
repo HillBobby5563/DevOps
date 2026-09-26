@@ -15,7 +15,7 @@ jobs:
 
       - name: Set up Docker Images
         run: |
-          docker-compose -f docker-compose.yml build
+          docker compose -f docker-compose.yml build
 
       - name: Start Services
         run: docker-compose up -d
