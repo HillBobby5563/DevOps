@@ -18,7 +18,7 @@ jobs:
           docker compose -f docker-compose.yml build
 
       - name: Start Services
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - name: Wait for Services to be Healthy
         run: sleep 10
@@ -30,7 +30,7 @@ jobs:
 
       - name: Logs
         if: failure()
-        run: docker-compose logs
+        run: docker compose logs
 
   push-docker:
     needs: build
