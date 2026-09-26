@@ -6,9 +6,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# === DATABASE CONFIG ===
-# ОШИБКА #1: неправильный синтаксис для подключения к БД!
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql//postgres:secret@localhost:5432/techshop")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:secret@localhost:5432/techshop")
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

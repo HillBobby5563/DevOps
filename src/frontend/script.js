@@ -1,6 +1,5 @@
-// === CONFIGURATION ===
-// ОШИБКА #2: неправильный URL для подключения к backend!
-const BACKEND_URL = 'http://localhost:5000';  // ← ОШИБКА! Должно быть http://backend:5000
+
+const BACKEND_URL = 'http://localhost:5000';
 
 // Shopping cart
 let cart = [];
